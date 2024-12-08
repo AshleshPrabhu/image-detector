@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@layer utilities{
+  .gradient{
+    @apply bg-gradient-to-b from-white via-blue-300  to-blue-600
+  }
+  .gradient-for-text{
+    @apply gradient text-transparent bg-clip-text
+  }
+}
